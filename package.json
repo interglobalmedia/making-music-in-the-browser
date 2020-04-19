@@ -1,5 +1,5 @@
 {
-  "name": "making-music-in-browser",
+  "name": "making-music-in-the-browser",
   "version": "1.0.0",
   "description": "Making music in the browser using the Web Audio API",
   "main": "index.js",
@@ -14,5 +14,9 @@
   "dependencies": {
     "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/local-storage-session-storage-fun-form.git"
   }
 }
