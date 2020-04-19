@@ -20,7 +20,7 @@ let calculateGain = function (mouseYPosition) {
   return 1 - (mouseYPosition / window.innerHeight) * maxGain + minGain;
 };
 
-var drawCircle = function (x, y) {
+let drawCircle = function (x, y) {
   circle.style.background = '#f2ed63';
   circle.style.display = 'block';
   circle.style.left = x + 'px';
