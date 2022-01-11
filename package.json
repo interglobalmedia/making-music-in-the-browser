@@ -6,14 +6,14 @@
   "scripts": {
     "scss": "node-sass --watch styles/scss -o styles/css",
     "clean": "rm -rf dist/ && mkdir dist/",
-    "build": "cp -R scripts styles dist/ && cp index.html dist/",
+    "build": "cp -R scripts styles dist/ && cp favicon.ico index.html dist/",
     "deploy": "gh-pages -d dist"
   },
   "author": "Maria D. Campbell",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1"
+    "gh-pages": "^3.2.3",
+    "node-sass": "^7.0.1"
   },
   "repository": {
     "type": "git",
