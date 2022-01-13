@@ -96,10 +96,22 @@ document.body.addEventListener('pointerdown', function (e) {
   createOscillator(e);
 });
 
+document.body.addEventListener('touchstart', function (e) {
+  createOscillator(e);
+});
+
 document.body.addEventListener('pointerup', function () {
   stopOscillator();
 });
 
+document.body.addEventListener('touchend', function () {
+  stopOscillator();
+});
+
 document.body.addEventListener('pointermove', function (e) {
+  changeFrequency(e);
+});
+
+document.body.addEventListener('touchmove', function (e) {
   changeFrequency(e);
 });
