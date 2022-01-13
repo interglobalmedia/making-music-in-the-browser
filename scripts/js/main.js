@@ -92,26 +92,14 @@ let changeFrequency = function (e) {
   }
 };
 
-document.body.addEventListener('mousedown', function (e) {
+document.body.addEventListener('pointerdown', function (e) {
   createOscillator(e);
 });
 
-document.body.addEventListener('touchstart', function (e) {
-  createOscillator(e);
-});
-
-document.body.addEventListener('mouseup', function () {
+document.body.addEventListener('pointerup', function () {
   stopOscillator();
 });
 
-document.body.addEventListener('touchend', function () {
-  stopOscillator();
-});
-
-document.body.addEventListener('mousemove', function (e) {
-  changeFrequency(e);
-});
-
-document.body.addEventListener('touchmove', function (e) {
+document.body.addEventListener('pointermove', function (e) {
   changeFrequency(e);
 });
